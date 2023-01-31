@@ -28,8 +28,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@2
+        uses: gradle/wrapper-validation-action@1.0.5
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@2
+        uses: gradle/gradle-build-action@2.3.3
         with:
           arguments: build
